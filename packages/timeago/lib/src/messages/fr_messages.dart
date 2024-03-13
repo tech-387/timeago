@@ -27,7 +27,7 @@ class FrMessages implements LookupMessages {
   @override
   String aboutAMonth(int days) => 'environ un mois';
   @override
-  String months(int months) => 'environ $months mois';
+  String months(int months, int days) => 'environ $months mois';
   @override
   String aboutAYear(int year) => 'un an';
   @override
@@ -63,7 +63,7 @@ class FrShortMessages implements LookupMessages {
   @override
   String aboutAMonth(int days) => 'un mois';
   @override
-  String months(int months) => '$months mois';
+  String months(int months, int days) => '$months mois';
   @override
   String aboutAYear(int year) => 'un an';
   @override

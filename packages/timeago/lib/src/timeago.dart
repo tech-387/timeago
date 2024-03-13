@@ -51,7 +51,8 @@ String format(DateTime date,
     {String? locale, DateTime? clock, bool allowFromNow = false}) {
   final _locale = locale ?? _default;
   if (_lookupMessagesMap[_locale] == null) {
-    print("Locale [$_locale] has not been added, using [$_default] as fallback. To add a locale use [setLocaleMessages]");
+    print(
+        "Locale [$_locale] has not been added, using [$_default] as fallback. To add a locale use [setLocaleMessages]");
   }
   final _allowFromNow = allowFromNow;
   final messages = _lookupMessagesMap[_locale] ?? EnMessages();
@@ -94,7 +95,7 @@ String format(DateTime date,
   } else if (days < 60) {
     result = messages.aboutAMonth(days.round());
   } else if (days < 365) {
-    result = messages.months(months.round());
+    result = messages.months(months.round(), days.round());
   } else if (years < 2) {
     result = messages.aboutAYear(months.round());
   } else {

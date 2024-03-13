@@ -27,7 +27,7 @@ class KmMessages implements LookupMessages {
   @override
   String aboutAMonth(int days) => 'ប្រមាណមួយខែ';
   @override
-  String months(int months) => ' $months ខែ';
+  String months(int months, int days) => ' $months ខែ';
   @override
   String aboutAYear(int year) => 'ប្រមាណមួយឆ្នាំ';
   @override
@@ -63,7 +63,7 @@ class KmShortMessages implements LookupMessages {
   @override
   String aboutAMonth(int days) => '~1 ខ';
   @override
-  String months(int months) => '$months ខ';
+  String months(int months, int days) => '$months ខ';
   @override
   String aboutAYear(int year) => '~1 ឆ';
   @override

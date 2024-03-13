@@ -37,7 +37,7 @@ abstract class LookupMessages {
   String aboutAMonth(int days);
 
   /// Format when time is in months
-  String months(int months);
+  String months(int months, int days);
 
   /// Format when time is about a year
   String aboutAYear(int year);

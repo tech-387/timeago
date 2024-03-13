@@ -27,7 +27,7 @@ class TrMessages implements LookupMessages {
   @override
   String aboutAMonth(int days) => 'bir ay';
   @override
-  String months(int months) => '$months ay';
+  String months(int months, int days) => '$months ay';
   @override
   String aboutAYear(int year) => 'bir yıl';
   @override
@@ -63,7 +63,7 @@ class TrShortMessages implements LookupMessages {
   @override
   String aboutAMonth(int days) => '~1ay';
   @override
-  String months(int months) => '${months}ay';
+  String months(int months, int days) => '${months}ay';
   @override
   String aboutAYear(int year) => '~1y';
   @override

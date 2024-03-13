@@ -73,7 +73,7 @@ class HrMessages implements timeago.LookupMessages {
   String aboutAMonth(int days) => 'oko jednog mjeseca';
 
   @override
-  String months(int months) {
+  String months(int months, int days) {
     if (months % 100 == 11 ||
         months % 100 == 12 ||
         months % 100 == 13 ||

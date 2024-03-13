@@ -27,7 +27,7 @@ class HuMessages implements LookupMessages {
   @override
   String aboutAMonth(int days) => 'kb. egy hónap';
   @override
-  String months(int months) => '$months hónap';
+  String months(int months, int days) => '$months hónap';
   @override
   String aboutAYear(int year) => 'kb. egy év';
   @override
@@ -63,7 +63,7 @@ class HuShortMessages implements LookupMessages {
   @override
   String aboutAMonth(int days) => 'kb. 1 hónap';
   @override
-  String months(int months) => '$months honap';
+  String months(int months, int days) => '$months honap';
   @override
   String aboutAYear(int year) => 'kb. 1 év';
   @override

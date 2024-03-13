@@ -27,7 +27,7 @@ class ZhCnMessages implements LookupMessages {
   @override
   String aboutAMonth(int days) => '约1个月';
   @override
-  String months(int months) => '约 ${months} 月';
+  String months(int months, int days) => '约 ${months} 月';
   @override
   String aboutAYear(int year) => '约1年';
   @override

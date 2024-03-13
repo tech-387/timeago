@@ -27,7 +27,8 @@ class PlMessages implements LookupMessages {
   @override
   String aboutAMonth(int days) => 'około miesiąca';
   @override
-  String months(int months) => _pluralize(months, 'miesiące', 'miesięcy');
+  String months(int months, int days) =>
+      _pluralize(months, 'miesiące', 'miesięcy');
   @override
   String aboutAYear(int year) => 'około roku';
   @override

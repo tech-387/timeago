@@ -27,7 +27,7 @@ class FiMessages implements LookupMessages {
   @override
   String aboutAMonth(int days) => 'noin kuukausi';
   @override
-  String months(int months) => '$months kuukautta';
+  String months(int months, int days) => '$months kuukautta';
   @override
   String aboutAYear(int year) => 'noin vuosi';
   @override
@@ -63,7 +63,7 @@ class FiShortMessages implements LookupMessages {
   @override
   String aboutAMonth(int days) => '~kk';
   @override
-  String months(int months) => '${months} kk:ta';
+  String months(int months, int days) => '${months} kk:ta';
   @override
   String aboutAYear(int year) => '~1 v';
   @override

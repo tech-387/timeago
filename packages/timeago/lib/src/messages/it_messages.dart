@@ -27,7 +27,7 @@ class ItMessages implements LookupMessages {
   @override
   String aboutAMonth(int days) => 'circa un mese';
   @override
-  String months(int months) => '${months} mesi';
+  String months(int months, int days) => '${months} mesi';
   @override
   String aboutAYear(int year) => 'circa un anno';
   @override
@@ -63,7 +63,7 @@ class ItShortMessages implements LookupMessages {
   @override
   String aboutAMonth(int days) => '~1 m';
   @override
-  String months(int months) => '$months m';
+  String months(int months, int days) => '$months m';
   @override
   String aboutAYear(int year) => '~1 a';
   @override

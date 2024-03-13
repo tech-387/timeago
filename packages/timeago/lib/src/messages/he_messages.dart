@@ -27,7 +27,7 @@ class HeMessages implements LookupMessages {
   @override
   String aboutAMonth(int days) => 'כחודש';
   @override
-  String months(int months) => '$months חודשים';
+  String months(int months, int days) => '$months חודשים';
   @override
   String aboutAYear(int year) => 'כשנה';
   @override
@@ -63,7 +63,7 @@ class HeShortMessages implements LookupMessages {
   @override
   String aboutAMonth(int days) => 'כחודש';
   @override
-  String months(int months) => '$months חודשים';
+  String months(int months, int days) => '$months חודשים';
   @override
   String aboutAYear(int year) => 'כשנה';
   @override

@@ -27,7 +27,7 @@ class EnMessages implements LookupMessages {
   @override
   String aboutAMonth(int days) => 'about a month';
   @override
-  String months(int months) => '$months months';
+  String months(int months, int days) => '$months months';
   @override
   String aboutAYear(int year) => 'about a year';
   @override
@@ -63,7 +63,7 @@ class EnShortMessages implements LookupMessages {
   @override
   String aboutAMonth(int days) => '~1mo';
   @override
-  String months(int months) => '${months}mo';
+  String months(int months, int days) => '${months}mo';
   @override
   String aboutAYear(int year) => '~1y';
   @override

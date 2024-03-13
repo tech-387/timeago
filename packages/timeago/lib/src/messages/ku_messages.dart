@@ -48,7 +48,7 @@ class KuMessages implements LookupMessages {
   @override
   String aboutAMonth(int days) => 'مانگێک لەمەوپێش';
   @override
-  String months(int months) {
+  String months(int months, int days) {
     if (months == 1) {
       return 'مانگێک لەمەوپێش';
     }
@@ -97,7 +97,7 @@ class KuShortMessages implements LookupMessages {
   @override
   String aboutAMonth(int days) => '~1 مانگ';
   @override
-  String months(int months) => 'مانگ $months';
+  String months(int months, int days) => 'مانگ $months';
   @override
   String aboutAYear(int year) => '~1 ساڵ';
   @override

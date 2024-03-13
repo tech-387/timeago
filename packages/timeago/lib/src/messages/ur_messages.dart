@@ -27,7 +27,8 @@ class UrMessages implements LookupMessages {
   @override
   String aboutAMonth(int days) => 'ایک مہینہ';
   @override
-  String months(int months) => '${acmoConvertToUrduNumbers(months)} مہینہ';
+  String months(int months, int days) =>
+      '${acmoConvertToUrduNumbers(months)} مہینہ';
   @override
   String aboutAYear(int year) => 'ایک سال';
   @override
@@ -63,7 +64,8 @@ class ShortMessages implements LookupMessages {
   @override
   String aboutAMonth(int days) => '~١ ماہ';
   @override
-  String months(int months) => '${acmoConvertToUrduNumbers(months)} ماہ';
+  String months(int months, int days) =>
+      '${acmoConvertToUrduNumbers(months)} ماہ';
   @override
   String aboutAYear(int year) => '~١ س';
   @override

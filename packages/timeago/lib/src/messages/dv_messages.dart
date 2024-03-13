@@ -27,7 +27,7 @@ class DvMessages implements LookupMessages {
   @override
   String aboutAMonth(int days) => 'މަހެއް ހާ ދުވަސް';
   @override
-  String months(int months) => '$months މަސް';
+  String months(int months, int days) => '$months މަސް';
   @override
   String aboutAYear(int year) => 'އަހަރެއް ހާ ދުވަސް';
   @override
@@ -64,7 +64,7 @@ class DvShortMessages implements LookupMessages {
   @override
   String aboutAMonth(int days) => '~1 މަސް';
   @override
-  String months(int months) => '$months މަސް';
+  String months(int months, int days) => '$months މަސް';
   @override
   String aboutAYear(int year) => '~1 އަހަރު';
   @override

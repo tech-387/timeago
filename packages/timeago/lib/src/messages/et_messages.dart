@@ -27,7 +27,7 @@ class EtMessages implements LookupMessages {
   @override
   String aboutAMonth(int days) => 'umbes kuu';
   @override
-  String months(int months) => '$months kuud';
+  String months(int months, int days) => '$months kuud';
   @override
   String aboutAYear(int year) => 'umbes aasta';
   @override
@@ -63,7 +63,7 @@ class EtShortMessages implements LookupMessages {
   @override
   String aboutAMonth(int days) => '~1k';
   @override
-  String months(int months) => '${months}k';
+  String months(int months, int days) => '${months}k';
   @override
   String aboutAYear(int year) => '~1a';
   @override

@@ -27,7 +27,7 @@ class HiMessages implements LookupMessages {
   @override
   String aboutAMonth(int days) => 'तक़रीबन एक महीना';
   @override
-  String months(int months) => '$months महीने';
+  String months(int months, int days) => '$months महीने';
   @override
   String aboutAYear(int year) => 'एक साल';
   @override
@@ -63,7 +63,7 @@ class HiShortMessages implements LookupMessages {
   @override
   String aboutAMonth(int days) => '~1 म';
   @override
-  String months(int months) => '$months म';
+  String months(int months, int days) => '$months म';
   @override
   String aboutAYear(int year) => '~1 सा';
   @override

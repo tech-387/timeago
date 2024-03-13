@@ -27,7 +27,7 @@ class CaMessages implements LookupMessages {
   @override
   String aboutAMonth(int days) => 'un mes';
   @override
-  String months(int months) => '$months mesos';
+  String months(int months, int days) => '$months mesos';
   @override
   String aboutAYear(int year) => 'un any';
   @override
@@ -63,7 +63,7 @@ class CaShortMessages implements LookupMessages {
   @override
   String aboutAMonth(int days) => '~1 mes';
   @override
-  String months(int months) => '$months mesos';
+  String months(int months, int days) => '$months mesos';
   @override
   String aboutAYear(int year) => '~1 any';
   @override

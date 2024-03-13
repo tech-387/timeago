@@ -45,7 +45,7 @@ class AmMessages implements LookupMessages {
   }
 
   @override
-  String months(int months) {
+  String months(int months, int days) {
     if (months == 1) {
       return '$months ወር';
     }
@@ -103,7 +103,7 @@ class AmShortMessages implements LookupMessages {
   @override
   String aboutAMonth(int days) => '~1ወር';
   @override
-  String months(int months) => '${months}ወር';
+  String months(int months, int days) => '${months}ወር';
   @override
   String aboutAYear(int year) => '~1ዓ';
   @override

@@ -29,7 +29,7 @@ class CsMessages implements LookupMessages {
   @override
   String aboutAMonth(int days) => 'měsícem';
   @override
-  String months(int months) =>
+  String months(int months, int days) =>
       _pluralize(months, 'měsícem', 'měsíci', 'měsíci');
   @override
   String aboutAYear(int year) => 'rokem';
@@ -66,7 +66,8 @@ class CsShortMessages implements LookupMessages {
   @override
   String aboutAMonth(int days) => '~1 měsíc';
   @override
-  String months(int months) => _pluralize(months, 'měsíc', 'měsíce', 'měsíců');
+  String months(int months, int days) =>
+      _pluralize(months, 'měsíc', 'měsíce', 'měsíců');
   @override
   String aboutAYear(int year) => '~1 rok';
   @override
